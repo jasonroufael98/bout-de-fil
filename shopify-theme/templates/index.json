@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "image_alt": "Two fringed knot handbags, one burgundy jacquard and one zebra print, on a cream bouclé chair",
+        "eyebrow": "Drop 01",
+        "heading": "The Fringe\nCollection",
+        "lead": "Handcrafted bags with movement,\ntexture, and fun silhouettes.",
+        "note": "Limited releases.",
+        "button_label": "Shop the Drop",
+        "button_link": "/collections/all"
+      }
+    }
+  },
+  "order": ["hero"]
+}

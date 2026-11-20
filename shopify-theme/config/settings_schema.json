@@ -1,0 +1,50 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Bout de Fil",
+    "theme_version": "0.1.0",
+    "theme_author": "Bout de Fil",
+    "theme_documentation_url": "https://github.com/jasonroufael98/bout-de-fil",
+    "theme_support_url": "https://github.com/jasonroufael98/bout-de-fil/issues"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_cream",
+        "label": "Background (cream)",
+        "default": "#f2e4d6"
+      },
+      {
+        "type": "color",
+        "id": "color_burgundy",
+        "label": "Accent (burgundy)",
+        "default": "#7a1523"
+      },
+      {
+        "type": "color",
+        "id": "color_burgundy_dark",
+        "label": "Accent hover (dark burgundy)",
+        "default": "#5c0e19"
+      },
+      {
+        "type": "color",
+        "id": "color_ink",
+        "label": "Text",
+        "default": "#3a1a1c"
+      }
+    ]
+  },
+  {
+    "name": "Favicon",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon",
+        "info": "Square image, at least 32×32 px."
+      }
+    ]
+  }
+]

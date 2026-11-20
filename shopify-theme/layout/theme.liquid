@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="{{ settings.color_cream }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+  {%- if settings.favicon != blank -%}
+    <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+  {%- endif -%}
+
+  <title>
+    {{- page_title -}}
+    {%- if current_tags %} &ndash; {{ 'general.tagged' | t: tags: current_tags | join: ', ' }}{% endif -%}
+    {%- if current_page != 1 %} &ndash; {{ 'general.page' | t: page: current_page }}{% endif -%}
+    {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+  </title>
+
+  {%- if page_description -%}
+    <meta name="description" content="{{ page_description | escape }}">
+  {%- endif -%}
+
+  {{ content_for_header }}
+
+  {% render 'fonts' %}
+  <style>
+    :root {
+      --cream: {{ settings.color_cream }};
+      --burgundy: {{ settings.color_burgundy }};
+      --burgundy-dark: {{ settings.color_burgundy_dark }};
+      --ink: {{ settings.color_ink }};
+    }
+  </style>
+  {{ 'base.css' | asset_url | stylesheet_tag }}
+</head>
+
+<body class="template-{{ template.name | handleize }}">
+  <a class="skip-link" href="#MainContent">{{ 'general.skip_to_content' | t }}</a>
+
+  {% sections 'header-group' %}
+
+  <main id="MainContent" tabindex="-1">
+    {{ content_for_layout }}
+  </main>
+
+  <script src="{{ 'theme.js' | asset_url }}" defer></script>
+</body>
+</html>

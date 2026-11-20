@@ -1,0 +1,20 @@
+{
+  "general": {
+    "skip_to_content": "Skip to content",
+    "home": "home",
+    "primary_navigation": "Primary",
+    "open_menu": "Open menu",
+    "close_menu": "Close menu",
+    "tagged": "Tagged \"{{ tags }}\"",
+    "page": "Page {{ page }}",
+    "cart_label": {
+      "one": "Shopping bag, {{ count }} item",
+      "other": "Shopping bag, {{ count }} items"
+    },
+    "nav_fallback": {
+      "shop": "Shop",
+      "collection": "Collection",
+      "story": "Our Story"
+    }
+  }
+}
